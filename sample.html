@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang=\ "ja\">
+<head>
+  <meta charset=\ "utf-8\">
+  <meta http-equiv=\ "X-UA-Compatible\" content=\ "IE=edge\">
+  <meta name=\ "viewport\" content=\ "width=device-width, initial-scale=1, user-scalable=no\">
+  <meta name=\ "author\" content=\ "ポーカーギルド\">
+  <meta name=\ "description\" content=\ "ポーカーギルドは、国内の最新ライブポーカートーナメント情報をお届けすると共に、ポーカースポットの活性化やプレイヤー達の更なる交流を促進しているサイトです。\">
+  <meta name=\ "keywords\" content=\ "PokerGuild, ポーカーギルド, Poker, ポーカー\">
+  <meta name=\ "robots\" content=\ "noodp\">
+  <meta name=\ "csrf-token\" content=\ "0c067467bede24a0eedcb4abc0a701b4ff66bb387167bec31acaad8176ff1199a6ee129ed2a5b8abdbb26e048266a5a8dddc880e596527220f7891aee07c565b\">
+  <link href=\ "/poker_guild/favicon.ico?1509413317\" type=\ "image/x-icon\" rel=\ "icon\">
+  <link href=\ "/poker_guild/favicon.ico?1509413317\" type=\ "image/x-icon\" rel=\ "shortcut icon\">
+  <meta property=\ "og:title\" content=\ "ポーカーギルド\">
+  <meta property=\ "og:locale\" content=\ "ja_JP\">
+  <meta property=\ "og:type\" content=\ "website\">
+  <meta property=\ "og:url\" content=\ "http://pokerguild.jp/\">
+  <meta property=\ "og:site_name\" content=\ "ポーカーギルド\">
+  <meta property=\ "og:description\" content=\ "ポーカーギルドは、国内の最新ライブポーカートーナメント情報をお届けすると共に、ポーカースポットの活性化やプレイヤー達の更なる交流を促進しているサイトです。\">
+  <meta property=\ "og:image\" content=\ "http://pokerguild.jp/img/logo-og.png\" xmlns:og=\ "http://opengraphprotocol.org/schema/\">
+  <link rel=\ "apple-touch-icon\" href=\ "http://pokerguild.jp/img/logo-og.png\">
+  <title>ポーカーギルド</title>
+  <link rel=\ "stylesheet\" href=\ "/css/pokerguild.min.css?1509413241\" data-skrollr-stylesheet=\ "\">
+  <link rel=\ "stylesheet\" href=\ "/poker_guild/vendor/font-awesome/css/font-awesome.min.css?1509413317\">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-66606014-1', 'auto'); ga('send', 'pageview');\n
+  </script>
+</head>
+<body>
+  <header class=\ "header-global\">
+    <nav class=\ "navbar\">
+      <div class=\ "container\">
+        <div class=\ "navbar-header\">
+          <h1 class=\ "sr-only\">PokerGuild</h1> <a href=\ "/\" class=\ "navbar-brand\"> <img src=\"/img/logo-header.png?1509413241\" class=\"logo-header\" alt=\"PokerGuild\"> </a> <button type=\ "button\" class=\ "btn btn-lg navbar-toggle global-toggle\"><i class=\"fa fa-bars\"></i></button> </div>
+        <div class=\ "navbar-collapse collapse hidden-xs\">
+          <ul class=\ "nav navbar-nav navbar-right\">
+            <li>
+              <p class=\ "navbar-btn\"><a href=\ "#\" class=\ "btn btn-link open-login\">ログイン</a></p>
+            </li>
+            <li>
+              <p class=\ "navbar-btn\"><a href=\ "/register\" class=\ "btn btn-pg-primary\">登 録</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class=\ "container hidden-xs\">
+      <div class=\ "header-content\">
+        <h2 class=\ "site-heading\">国内の最新ライブポーカートーナメント情報をお届けします</h2>
+        <p class=\ "site-description\"> ポーカーギルドは、国内の最新ライブポーカートーナメント情報をお届けすると共に、<br> ポーカースポットの活性化やプレイヤー達の更なる交流を促進しているサイトです。 </p>
+      </div>
+    </div>
+  </header>
+  <nav class=\ "navbar navbar-global hidden-xs\">
+    <div class=\ "container\">
+      <div class=\ "row\">
+        <div class=\ "col-md-1\">
+          <div class=\ "stuff-fadein hide\"> <a href=\ "/\"> <img src=\"/img/logo-small.png?1509413241\" class=\"logo-global\" alt=\"\"> </a> </div>
+        </div>
+        <div class=\ "col-md-10\">
+          <ul class=\ "global-nav\">
+            <li class=\ "dropdown\"> <a class=\ "dropdown-toggle\" data-toggle=\ "dropdown\" role=\ "button\" aria-haspopup=\ "true\" aria-expanded=\ "false\"> <span class=\"menu-icon\"> <img src=\"/img/icon_event.png?1509413241\" alt=\"イベント情報\"> </span> <span class=\"stuff-fadeout\">イベント情報</span> </a>
+              <ul class=\ "dropdown-menu\">
+                <li><a href=\ "/tourneys\">トーナメント検索</a></li>
+                <li><a href=\ "/series\">シリーズランキング</a></li>
+                <li><a href=\ "/venues\">ポーカースポット情報</a></li>
+              </ul>
+            </li>
+            <li> <a href=\ "http://pokerguild.jp/spadie\" target=\ "_blank\"> <span class=\"menu-icon\"> <img src=\"/img/icon_spadie.png?1509413241\" alt=\"スペイディリーグ\"> </span> <span class=\"stuff-fadeout\">スペイディリーグ</span> </a> </li>
+            <li class=\ "dropdown\"> <a class=\ "dropdown-toggle\" data-toggle=\ "dropdown\" role=\ "button\" aria-haspopup=\ "true\" aria-expanded=\ "false\"> <span class=\"menu-icon\"> <img src=\"/img/icon_player.png?1509413241\" alt=\"コミュニティ\"> </span> <span class=\"stuff-fadeout\">コミュニティ</span> </a>
+              <ul class=\ "dropdown-menu\">
+                <li><a href=\ "/players\">プレイヤー検索</a></li>
+                <li><a href=\ "/pages/interview\">インタビュー</a></li>
+              </ul>
+            </li>
+            <li class=\ "dropdown\"> <a class=\ "dropdown-toggle\" data-toggle=\ "dropdown\" role=\ "button\" aria-haspopup=\ "true\" aria-expanded=\ "false\"> <span class=\"menu-icon\"> <img src=\"/img/icon_tourney.png?1509413241\" alt=\"ライブ情報\"> </span> <span class=\"stuff-fadeout\">ライブ情報</span> </a>
+              <ul class=\ "dropdown-menu\">
+                <li><a href=\ "/pages/liveevent\">海外ライブイベント</a></li>
+                <li><a href=\ "/pages/pokerjapan\">ポーカージャパン動画</a></li>
+              </ul>
+            </li>
+            <li> <a href=\ "/card\"> <span class=\"menu-icon\"> <i class=\"fa fa-id-card-o\"></i> </span> <span class=\"stuff-fadeout\">プレイヤーズカード</span> </a> </li>
+          </ul>
+        </div>
+        <div class=\ "col-md-1\">
+          <div class=\ "stuff-fadein hide\">
+            <ul class=\ "nav navbar-nav navbar-right\">
+              <li>
+                <div class=\ "navbar-btn\"> <a href=\ "#\" class=\ "btn btn-link open-login\"><i class=\"fa fa-sign-in\"></i></a> </div>
+              </li>
+              <li class=\ "hidden-md\">
+                <div class=\ "navbar-btn\"> <a href=\ "/register\" class=\ "btn btn-pg-inverse\"><i class=\"fa fa-user-plus\"></i></a> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class=\ "main-wrapper\">
+    <div class=\ "container\">
+      <h2 class=\ "hidden-xs page-title\">プレイヤー情報</h2>
+      <div class=\ "row\">
+        <div class=\ "col-md-8\">
+          <main>
+            <div class=\ "panel panel-pg-default\">
+              <div class=\ "panel-heading\">麻生真 (<a href=\ "/venues/44\">秋葉原カジノクエスト</a>) さんの情報</div>
+              <table class=\ "table table-striped\">
+                <tbody>
+                  <tr>
+                    <th>リンクユーザー</th>
+                    <td><a href=\ "/users/5923\">麻生 真</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class=\ "panel panel-pg-default\">
+              <div class=\ "panel-heading\">麻生真 (<a href=\ "/venues/44\">秋葉原カジノクエスト</a>) さんのトーナメント履歴</div>
+              <nav class=\ "text-center\">
+                <ul class=\ "pagination\">
+                  <li class=\ "current disabled\"><a>1</a></li>
+                  <li><a href=\ "/players/80513?page=2\">2</a></li>
+                  <li><a href=\ "/players/80513?page=3\">3</a></li>
+                  <li><a href=\ "/players/80513?page=4\">4</a></li>
+                </ul>
+              </nav>
+              <div class=\ "table-pg-responsive\">
+                <table class=\ "table table-striped\">
+                  <thead>
+                    <tr>
+                      <th>開催日</th>
+                      <th>トーナメント名</th>
+                      <th class=\ "text-right\">順位</th>
+                      <th class=\ "text-right\">ポイント</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2018/02/07</td>
+                      <td><a href=\ "/tourneys/41391\">★★カジクエ2周年week★★ 戦国ポーカーツアー・2周年トナメマルチサテライト・ターボトーナメント★2+1枠★</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>14</strong> / 31</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/02/04</td>
+                      <td><a href=\ "/tourneys/41684\">津曲（つまがり）&amp;タロー生誕記念♠SPADIEポーカーリーグ＆UNICORN ターボ（ノーリバイノーアドオン）</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>34</strong> / 42</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/02/04</td>
+                      <td><a href=\ "/tourneys/41684\">津曲（つまがり）&amp;タロー生誕記念♠SPADIEポーカーリーグ＆UNICORN ターボ（ノーリバイノーアドオン）</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>32</strong> / 42</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/02/04</td>
+                      <td><a href=\ "/tourneys/41684\">津曲（つまがり）&amp;タロー生誕記念♠SPADIEポーカーリーグ＆UNICORN ターボ（ノーリバイノーアドオン）</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>25</strong> / 42</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/02/04</td>
+                      <td><a href=\ "/tourneys/41684\">津曲（つまがり）&amp;タロー生誕記念♠SPADIEポーカーリーグ＆UNICORN ターボ（ノーリバイノーアドオン）</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>27</strong> / 42</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/02/04</td>
+                      <td><a href=\ "/tourneys/41474\">♠SPADIE FINAL DAY1C</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>26</strong> / 74</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/02/03</td>
+                      <td><a href=\ "/tourneys/42302\">♠SPADIEポーカーリーグ＆UNICORN カジクエで節分！鬼討伐トーナメント</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>6</strong> / 30</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/02/03</td>
+                      <td><a href=\ "/tourneys/42301\">★UNICORN1枠+1★Flagsチャンピオンシップサテライト ターボトーナメント</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>13</strong> / 21</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/02/03</td>
+                      <td><a href=\ "/tourneys/42301\">★UNICORN1枠+1★Flagsチャンピオンシップサテライト ターボトーナメント</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>16</strong> / 21</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/02/03</td>
+                      <td><a href=\ "/tourneys/42300\">真剣勝負！戦国ポーカーツアー・2周年トナメマルチサテライト・ディープトーナメント★2+2枠★</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>15</strong> / 22</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/01/28</td>
+                      <td><a href=\ "/tourneys/41542\">♠SPADIEポーカーリーグ＆UNICORN ターボ（ノーリバイノーアドオン）</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>23</strong> / 24</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/01/28</td>
+                      <td><a href=\ "/tourneys/41542\">♠SPADIEポーカーリーグ＆UNICORN ターボ（ノーリバイノーアドオン）</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>19</strong> / 24</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/01/28</td>
+                      <td><a href=\ "/tourneys/41542\">♠SPADIEポーカーリーグ＆UNICORN ターボ（ノーリバイノーアドオン）</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>9</strong> / 24</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/01/28</td>
+                      <td><a href=\ "/tourneys/41541\">♠SPADIEポーカーリーグ&amp;UNICORN 賢者イタプロ杯</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>34</strong> / 44</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/01/28</td>
+                      <td><a href=\ "/tourneys/41541\">♠SPADIEポーカーリーグ&amp;UNICORN 賢者イタプロ杯</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>28</strong> / 44</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/01/27</td>
+                      <td><a href=\ "/tourneys/41663\">★UNICORN1枠+1★Flagsチャンピオンシップサテライト ターボトーナメント</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong><img src=\"/img/rank/badge-3.png?1509413241\" alt=\"\"></strong> / 22</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/01/27</td>
+                      <td><a href=\ "/tourneys/41663\">★UNICORN1枠+1★Flagsチャンピオンシップサテライト ターボトーナメント</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>17</strong> / 22</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/01/21</td>
+                      <td><a href=\ "/tourneys/40769\">賢者ふじ杯 ♠SPADIEポーカーリーグ&amp; UNICORN ６MAXディープトーナメント</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>29</strong> / 35</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/01/20</td>
+                      <td><a href=\ "/tourneys/41148\">戦国ポーカーツアー・2周年トナメマルチサテライト・ターボトーナメント★2+1枠★</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong><img src=\"/img/rank/badge-1.png?1509413241\" alt=\"\"></strong> / 25</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                    <tr>
+                      <td>2018/01/20</td>
+                      <td><a href=\ "/tourneys/41148\">戦国ポーカーツアー・2周年トナメマルチサテライト・ターボトーナメント★2+1枠★</a></td>
+                      <td class=\ "text-nowrap text-right\"><strong>20</strong> / 25</td>
+                      <td class=\ "text-nowrap text-right\">0.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </main>
+          <div class=\ "panel panel-pg-content hidden-xs\">
+            <div class=\ "panel-body\"> <strong>シェア：</strong>
+              <div class=\ "pg-social-container\">
+                <div class=\ "pg-social-content\">
+                  <div class=\ "fb-like\" data-layout=\ "button_count\" data-share=\ "true\"></div>
+                  <div id=\ "fb-root\"></div>
+                  <script>
+                    (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \"//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
+                  </script>
+                </div>
+                <div class=\ "pg-social-content\"> <a href=\ "http://twitter.com/share\" class=\ "twitter-share-button\" data-url=\ "http://pokerguild.jp/players/80513\" data-count=\ "horizontal\" data-lang=\ "ja\">Tweet</a> </div>
+                <div class=\ "pg-social-content\">
+                  <div class=\ "g-plusone\" data-annotation=\ "none\" data-size=\ "medium\"></div>
+                  <script>
+                    (function() { var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://apis.google.com/js/plusone.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s); })();
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=\ "col-md-4\">
+          <div class=\ "content-sub\">
+            <div class=\ "hidden-xs\">
+              <div class=\ "panel panel-pg-primary\">
+                <div class=\ "panel-heading\">ログイン</div>
+                <div class=\ "panel-body\">
+                  <form action=\ "/login\" autocomplete=\ "off\" id=\ "LoginRequestLoginForm\" method=\ "post\" accept-charset=\ "utf-8\">
+                    <div style=\ "display:none;\"><input type=\ "hidden\" name=\ "_method\" value=\ "POST\"><input type=\ "hidden\" name=\ "data[_Token][key]\" value=\ "0c067467bede24a0eedcb4abc0a701b4ff66bb387167bec31acaad8176ff1199a6ee129ed2a5b8abdbb26e048266a5a8dddc880e596527220f7891aee07c565b\" id=\ "Token1967073326\" autocomplete=\ "off\"></div>
+                    <div class=\ "form-group\"><input name=\ "data[LoginRequest][mail]\" class=\ "form-control input-pg-lg\" placeholder=\ "メールアドレス\" required=\ "required\" type=\ "email\" id=\ "LoginRequestMail\"></div>
+                    <div class=\ "form-group\"><input name=\ "data[LoginRequest][password]\" class=\ "form-control input-pg-lg\" value=\ "\" placeholder=\ "パスワード\" required=\ "required\" type=\ "password\" id=\ "LoginRequestPassword\"></div>
+                    <div class=\ "clearfix\">
+                      <div class=\ "pull-left\">
+                        <div class=\ "checkbox\"><label><input type=\"hidden\" name=\"data[LoginRequest][remember_me]\" id=\"LoginRequestRememberMe_\" value=\"0\"><input type=\"checkbox\" name=\"data[LoginRequest][remember_me]\" value=\"1\" id=\"LoginRequestRememberMe\"> ログイン状態を保存する</label></div>
+                      </div>
+                      <div class=\ "pull-right\"> <button type=\ "submit\" class=\ "btn btn-pg-primary btn-pg-lg\">ログイン</button> </div>
+                    </div>
+                    <div class=\ "account-util\"> <a href=\ "/register\" class=\ "link-strong\">登録</a> <i class=\ "util-separator\">&#xA6;</i> <a href=\ "/reset-password\">パスワードをお忘れの方</a></div>
+                    <div style=\ "display:none;\"><input type=\ "hidden\" name=\ "data[_Token][fields]\" value=\ "99a4b1f7344b7c14f725d201d8b84485d61dea77%3A\" id=\ "TokenFields280035354\" autocomplete=\ "off\"><input type=\ "hidden\" name=\ "data[_Token][unlocked]\" value=\ "\" id=\ "TokenUnlocked1122887476\" autocomplete=\ "off\"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class=\ "hidden-xs\">
+              <div class=\ "panel panel-pg-embed\">
+                <div class=\ "panel-body text-center\"> <a href=\ "http://www.worldpokertour.com\" target=\ "_blank\"> <img src=\"/img/logo-wpt.png?1509413241\" alt=\"World Poker Tour\"> </a> </div>
+              </div>
+            </div>
+            <div class=\ "hidden-xs\">
+              <div class=\ "panel panel-pg-default\">
+                <div class=\ "panel-heading\">お知らせ</div>
+                <div class=\ "panel-body pg-info\">
+                  <ul>
+                    <li>マイレージシステムの使い方は<a href=\ "http://pokerguild.jp/pages/mile_user\">こちら</a>をご覧ください。</li>
+                    <li>マイレージシステムをご利用頂ける店舗は<a href=\ "http://pokerguild.jp/pages/mile_2\">こちら</a>です。</li>
+                    <li>ポーカーギルドの更新履歴は<a href=\ "http://pokerguild.jp/pages/update/\">こちら</a>です。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class=\ "panel panel-pg-default panel-pg-ranking\">
+              <div class=\ "panel-heading\">ランキング</div>
+              <table class=\ "table table-pg-ranking\">
+                <caption> <img src=\ "/img/round-left.svg?1509413241\" class=\ "ranking-selector prev visible-xs-inline\" alt=\ "\"> <span class=\ "title\">最近の優勝者</span> <img src=\ "/img/round-right.svg?1509413241\" class=\ "ranking-selector next visible-xs-inline\" alt=\ "\"> </caption>
+                <tbody>
+                  <tr>
+                    <td class=\ "rank\">&#9312</td>
+                    <td class=\ "venue\"><a href=\ "/venues/58\">新宿♦️ヒゲゴリラ♦️</a></td>
+                    <td class=\ "name\"><a href=\ "/players/74462\">Meg</a></td>
+                    <td class=\ "rating\">02/08</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9313</td>
+                    <td class=\ "venue\"><a href=\ "/venues/65\">カジスタ東京</a></td>
+                    <td class=\ "name\"><a href=\ "/players/84016\">Noriyuki</a></td>
+                    <td class=\ "rating\">02/08</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9314</td>
+                    <td class=\ "venue\"><a href=\ "/venues/58\">新宿♦️ヒゲゴリラ♦️</a></td>
+                    <td class=\ "name\"><a href=\ "/players/68514\">しんちゃん</a></td>
+                    <td class=\ "rating\">02/08</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9315</td>
+                    <td class=\ "venue\"><a href=\ "/venues/62\">ビリヤード&amp;カジノバー Peaks</a></td>
+                    <td class=\ "name\"><a href=\ "/players/70645\">山本さん</a></td>
+                    <td class=\ "rating\">02/08</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9316</td>
+                    <td class=\ "venue\"><a href=\ "/venues/65\">カジスタ東京</a></td>
+                    <td class=\ "name\"><a href=\ "/players/80975\">ヒゲ侍</a></td>
+                    <td class=\ "rating\">02/08</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan=\ "4\"><a href=\ "/rankings/recent-winners\">→ もっと見る</a></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <hr class=\ "panel-separator hidden-xs\">
+              <table class=\ "table table-pg-ranking hidden-xs\">
+                <caption> <img src=\ "/img/round-left.svg?1509413241\" class=\ "ranking-selector prev visible-xs-inline\" alt=\ "\"> <span class=\ "title\">成績上位者 - 120日間</span> <img src=\ "/img/round-right.svg?1509413241\" class=\ "ranking-selector next visible-xs-inline\" alt=\ "\"> </caption>
+                <tbody>
+                  <tr>
+                    <td class=\ "rank\">&#9312</td>
+                    <td class=\ "venue\"><a href=\ "/venues/58\">新宿♦️ヒゲゴリラ♦️</a></td>
+                    <td class=\ "name\"><a href=\ "/players/73102\">くえ</a></td>
+                    <td class=\ "rating\">30.0%</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9313</td>
+                    <td class=\ "venue\"><a href=\ "/venues/6\">東京 de POKER</a></td>
+                    <td class=\ "name\"><a href=\ "/players/79974\">まうな＠dePoker</a></td>
+                    <td class=\ "rating\">30.0%</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9314</td>
+                    <td class=\ "venue\"><a href=\ "/venues/1\">アキバギルド</a></td>
+                    <td class=\ "name\"><a href=\ "/players/2352\">イリタ(イリタン)</a></td>
+                    <td class=\ "rating\">27.3%</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9315</td>
+                    <td class=\ "venue\"><a href=\ "/venues/1\">アキバギルド</a></td>
+                    <td class=\ "name\"><a href=\ "/players/48023\">てる</a></td>
+                    <td class=\ "rating\">27.3%</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9316</td>
+                    <td class=\ "venue\"><a href=\ "/venues/23\">POOL BLOW</a></td>
+                    <td class=\ "name\"><a href=\ "/players/27896\">川端　守様</a></td>
+                    <td class=\ "rating\">26.7%</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan=\ "4\"><a href=\ "/rankings/top-winrate-120days\">→ もっと見る</a></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <hr class=\ "panel-separator hidden-xs\">
+              <table class=\ "table table-pg-ranking hidden-xs\">
+                <caption> <img src=\ "/img/round-left.svg?1509413241\" class=\ "ranking-selector prev visible-xs-inline\" alt=\ "\"> <span class=\ "title\">成績上位者 - 年間</span> <img src=\ "/img/round-right.svg?1509413241\" class=\ "ranking-selector next visible-xs-inline\" alt=\ "\"> </caption>
+                <tbody>
+                  <tr>
+                    <td class=\ "rank\">&#9312</td>
+                    <td class=\ "venue\"><a href=\ "/venues/29\">ナゴヤギルド</a></td>
+                    <td class=\ "name\"><a href=\ "/players/44935\">たかしくん</a></td>
+                    <td class=\ "rating\">24.0%</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9313</td>
+                    <td class=\ "venue\"><a href=\ "/venues/6\">東京 de POKER</a></td>
+                    <td class=\ "name\"><a href=\ "/players/61489\">ツッチー（プロ）</a></td>
+                    <td class=\ "rating\">23.8%</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9314</td>
+                    <td class=\ "venue\"><a href=\ "/venues/1\">アキバギルド</a></td>
+                    <td class=\ "name\"><a href=\ "/players/53647\">tokky</a></td>
+                    <td class=\ "rating\">23.3%</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9315</td>
+                    <td class=\ "venue\"><a href=\ "/venues/62\">ビリヤード&amp;カジノバー Peaks</a></td>
+                    <td class=\ "name\"><a href=\ "/players/70067\">中岡さん</a></td>
+                    <td class=\ "rating\">23.2%</td>
+                  </tr>
+                  <tr>
+                    <td class=\ "rank\">&#9316</td>
+                    <td class=\ "venue\"><a href=\ "/venues/6\">東京 de POKER</a></td>
+                    <td class=\ "name\"><a href=\ "/players/26078\">おーや</a></td>
+                    <td class=\ "rating\">22.2%</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan=\ "4\"><a href=\ "/rankings/top-winrate-annual\">→ もっと見る</a></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <hr class=\ "panel-separator hidden-xs\">
+              <table class=\ "table table-pg-ranking hidden-xs\">
+                <caption> <img src=\ "/img/round-left.svg?1509413241\" class=\ "ranking-selector prev visible-xs-inline\" alt=\ "\"> <span class=\ "title\">S級ランキング</span> <img src=\ "/img/round-right.svg?1509413241\" class=\ "ranking-selector next visible-xs-inline\" alt=\ "\"> </caption>
+                <tbody> </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan=\ "4\"><a href=\ "/rankings/s-rank-ranking\">→ もっと見る</a></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=\ "visible-xs\">
+    <div class=\ "img-wrapper\"> <a href=\ "http://www.worldpokertour.com\" target=\ "_blank\"> <img src=\"/img/logo-wpt.png?1509413241\" alt=\"World Poker Tour\"> </a> </div>
+  </div>
+  <nav class=\ "navbar navbar-footer\">
+    <div class=\ "container\">
+      <div class=\ "row\">
+        <h2 class=\ "sr-only\">サイトマップ</h2>
+        <div class=\ "hidden-xs\">
+          <div class=\ "col-md-offset-2 col-md-2\">
+            <h3>ゲーム</h3>
+            <ul>
+              <li><a href=\ "/pages/rules\">テキサスホールデム</a></li>
+              <li><a href=\ "/pages/beginner\">ポーカー入門編</a></li>
+              <li><a href=\ "/pages/2013tda\">TDAルール</a></li>
+            </ul>
+          </div>
+          <div class=\ "col-md-offset-2 col-md-2\">
+            <h3>企業情報</h3>
+            <ul>
+              <li><a href=\ "/pages/company\">運営会社について</a></li>
+              <li><a href=\ "/pages/privacypolicy\">プライバシーポリシー</a></li>
+              <li><a href=\ "/pages/faq\">よくあるご質問</a></li>
+            </ul>
+          </div>
+          <div class=\ "col-md-4\">
+            <h3>後援・協力</h3>
+            <ul>
+              <li><a href=\ "http://www.poker.or.jp/\" target=\ "_blank\">NPO法人 日本ポーカー協会</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class=\ "visible-xs\">
+          <dl> <dt>後援</dt>
+            <dd><a href=\ "http://www.poker.or.jp/\" target=\ "_blank\">NPO法人 日本ポーカー協会</a></dd> <dt>協力</dt>
+            <dd><a href=\ "https://www.facebook.com/JapanPokerClub/\" target=\ "_blank\">NPO法人 日本ポーカー倶楽部</a></dd> <dt>お問い合わせ</dt>
+            <dd><a href=\ "mailto:info@pokerguild.jp\">info@pokerguild.jp</a></dd> <dt>会社案内</dt>
+            <dd><a href=\ "/pages/company\">運営会社について</a></dd> <dt>その他</dt>
+            <dd><a href=\ "/pages/privacypolicy\">プライバシーポリシー</a></dd>
+          </dl>
+        </div>
+      </div>
+      <div class=\ "footer-util\">
+        <div class=\ "social-link\"> <a href=\ "https://twitter.com/pokerguild\" target=\ "_blank\" class=\ "btn btn-lg btn-default btn-pg-footer btn-pg-circle\"><i class=\"fa fa-twitter\"></i></a> <a href=\ "https://www.facebook.com/pages/%E3%83%9D%E3%83%BC%E3%82%AB%E3%83%BC%E3%82%AE%E3%83%AB%E3%83%89/919560424784490\" target=\ "_blank\" class=\ "btn btn-lg btn-default btn-pg-footer btn-pg-circle\"><i class=\"fa fa-facebook\"></i></a> </div>
+        <div class=\ "back-top\"> <a href=\ "#\" class=\ "btn btn-default btn-pg-footer\"><i class=\"fa fa-chevron-up\"></i></a> </div>
+      </div>
+    </div>
+  </nav>
+  <footer class=\ "footer-global\">
+    <div class=\ "container\">
+      <div class=\ "footer-content\">
+        <p> <small>&copy; 2015 PokerGuild.jp</small> </p>
+        <p> <img src=\ "/img/logo-footer.png?1509413241\" class=\ "logo-footer\" alt=\ "PokerGuild\"> </p>
+      </div>
+    </div>
+  </footer>
+  <nav id=\ "sidr\">
+    <ul>
+      <li><a href=\ "#\" class=\ "global-toggle\"><i class=\"fa fa-times\"></i> メニューを閉じる</a></li>
+    </ul>
+    <ul>
+      <li> <a href=\ "#\" class=\ "open-login\"><i class=\"fa fa-sign-in\"></i> ログイン</a> </li>
+      <li> <a href=\ "/register\"><i class=\"fa fa-user-plus\"></i> 登 録</a> </li>
+    </ul>
+    <ul class=\ "global-nav\">
+      <li class=\ "\"> <a class=\ "dropdown-toggle\" data-toggle=\ "dropdown\" role=\ "button\" aria-haspopup=\ "true\" aria-expanded=\ "false\"> <span class=\"menu-icon\"> <img src=\"/img/icon_event.png?1509413241\" alt=\"イベント情報\"> </span> <span class=\"stuff-fadeout\">イベント情報</span> </a>
+        <ul class=\ "\">
+          <li><a href=\ "/tourneys\">トーナメント検索</a></li>
+          <li><a href=\ "/series\">シリーズランキング</a></li>
+          <li><a href=\ "/venues\">ポーカースポット情報</a></li>
+        </ul>
+      </li>
+      <li> <a href=\ "http://pokerguild.jp/spadie\" target=\ "_blank\"> <span class=\"menu-icon\"> <img src=\"/img/icon_spadie.png?1509413241\" alt=\"スペイディリーグ\"> </span> <span class=\"stuff-fadeout\">スペイディリーグ</span> </a> </li>
+      <li class=\ "\"> <a class=\ "dropdown-toggle\" data-toggle=\ "dropdown\" role=\ "button\" aria-haspopup=\ "true\" aria-expanded=\ "false\"> <span class=\"menu-icon\"> <img src=\"/img/icon_player.png?1509413241\" alt=\"コミュニティ\"> </span> <span class=\"stuff-fadeout\">コミュニティ</span> </a>
+        <ul class=\ "\">
+          <li><a href=\ "/players\">プレイヤー検索</a></li>
+          <li><a href=\ "/pages/interview\">インタビュー</a></li>
+        </ul>
+      </li>
+      <li class=\ "\"> <a class=\ "dropdown-toggle\" data-toggle=\ "dropdown\" role=\ "button\" aria-haspopup=\ "true\" aria-expanded=\ "false\"> <span class=\"menu-icon\"> <img src=\"/img/icon_tourney.png?1509413241\" alt=\"ライブ情報\"> </span> <span class=\"stuff-fadeout\">ライブ情報</span> </a>
+        <ul class=\ "\">
+          <li><a href=\ "/pages/liveevent\">海外ライブイベント</a></li>
+          <li><a href=\ "/pages/pokerjapan\">ポーカージャパン動画</a></li>
+        </ul>
+      </li>
+      <li> <a href=\ "/card\"> <span class=\"menu-icon\"> <i class=\"fa fa-id-card-o\"></i> </span> <span class=\"stuff-fadeout\">プレイヤーズカード</span> </a> </li>
+    </ul>
+  </nav>
+  <div id=\ "login-dialog\" class=\ "modal fade modal-pg-login\" tabindex=\ "-1\" role=\ "dialog\">
+    <div class=\ "modal-dialog modal-md\">
+      <div class=\ "modal-content\">
+        <div class=\ "modal-body\">
+          <div class=\ "login-form\">
+            <h3>ログイン</h3>
+            <form action=\ "/login\" autocomplete=\ "off\" id=\ "LoginRequestLoginForm\" method=\ "post\" accept-charset=\ "utf-8\">
+              <div style=\ "display:none;\"><input type=\ "hidden\" name=\ "_method\" value=\ "POST\"><input type=\ "hidden\" name=\ "data[_Token][key]\" value=\ "0c067467bede24a0eedcb4abc0a701b4ff66bb387167bec31acaad8176ff1199a6ee129ed2a5b8abdbb26e048266a5a8dddc880e596527220f7891aee07c565b\" id=\ "Token858999603\" autocomplete=\ "off\"></div>
+              <div class=\ "form-group\"><input name=\ "data[LoginRequest][mail]\" class=\ "form-control input-pg-lg\" placeholder=\ "メールアドレス\" required=\ "required\" type=\ "email\" id=\ "LoginRequestMail\"></div>
+              <div class=\ "form-group\"><input name=\ "data[LoginRequest][password]\" class=\ "form-control input-pg-lg\" value=\ "\" placeholder=\ "パスワード\" required=\ "required\" type=\ "password\" id=\ "LoginRequestPassword\"></div>
+              <div class=\ "clearfix\">
+                <div class=\ "pull-left\">
+                  <div class=\ "checkbox\"><label><input type=\"hidden\" name=\"data[LoginRequest][remember_me]\" id=\"LoginRequestRememberMe_\" value=\"0\"><input type=\"checkbox\" name=\"data[LoginRequest][remember_me]\" value=\"1\" id=\"LoginRequestRememberMe\"> ログイン状態を保存する</label></div>
+                </div>
+                <div class=\ "pull-right\"> <button type=\ "submit\" class=\ "btn btn-pg-primary btn-pg-lg\">ログイン</button> </div>
+              </div>
+              <div class=\ "account-util\"> <a href=\ "/register\" class=\ "link-strong\">登録</a> <i class=\ "util-separator\">&#xA6;</i> <a href=\ "/reset-password\">パスワードをお忘れの方</a></div>
+              <div style=\ "display:none;\"><input type=\ "hidden\" name=\ "data[_Token][fields]\" value=\ "99a4b1f7344b7c14f725d201d8b84485d61dea77%3A\" id=\ "TokenFields1109745252\" autocomplete=\ "off\"><input type=\ "hidden\" name=\ "data[_Token][unlocked]\" value=\ "\" id=\ "TokenUnlocked1100763690\" autocomplete=\ "off\"></div>
+            </form>
+          </div>
+          <div class=\ "login-separator hidden-xs\"> <img src=\ "/img/separator-login.png?1509413241\" alt=\ "\"> </div>
+          <div class=\ "login-sns\"> <a class=\ "btn btn-block btn-pg-lg btn-pg-facebook\" href=\ "/signin/facebook\"> <i class=\"fa fa-lg fa-facebook\"></i> Facebookでログイン </a> <a class=\ "btn btn-block btn-pg-lg btn-pg-twitter\" href=\ "/signin/twitter\"> <i class=\"fa fa-lg fa-twitter\"></i> Twitterでログイン </a> <a class=\ "btn btn-block btn-pg-lg btn-pg-google\" href=\ "/signin/google\"> <i class=\"fa fa-lg fa-google-plus\"></i> Googleでログイン </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src=\ "/js/pokerguild.min.js?1509413241\"></script>
+  <script src=\ "/js/common.min.js?1509413241\"></script>
+  <script src=\ "/poker_guild/js/common.min.js?1509413317\"></script>
+  <script src=\ "http://platform.twitter.com/widgets.js\"></script>
+</body>
+</html>\n
