@@ -24,6 +24,9 @@ tournament_result = {}
       key = node_list[1].text + node_list[3].text
       tournament_result[key] ||= []
       results = node_list[5].text.split(' ')
+      if results.length == 2
+        results.insert(0, node_list[5].css('img').attribute("src").value.delete("/img/rank/badge-")[0])
+      end
       tournament_result[key] << { date: node_list[1].text, name: node_list[3].text, rank: results[0].to_i, players: results[2].to_i }
     end
   end
@@ -62,7 +65,10 @@ final_ex_tournament = result_list.select { |a| a[0][:players] >= 20 }
 p final_tournament_count = final_ex_tournament.inject(0) { |count, finals| count += finals.count { |entry| entry[:rank] <= 10 } }
 p (final_tournament_count / entry_20over.to_f) * 100
 
+p "優勝回数"
+p result_list.select { |a| a.any?{ |t| t[:rank] == 1 } }.count
 
-
+p "連帯数"
+p result_list.select { |a| a.any?{ |t| t[:rank] <= 3 } }.count
 
 
